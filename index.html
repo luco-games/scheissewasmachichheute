@@ -6,9 +6,13 @@
     <title>Schei&szlig;e was mach ich heute</title>
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
     <style>
+      html {
+        height: 100%;
+      }
         body {
             background: #E494FF;
             background: linear-gradient(180deg, rgba(228, 148, 255, 1) 0%, rgba(134, 142, 252, 1) 35%, rgba(130, 255, 155, 1) 100%);
+            background-attachment: fixed;
         }
         .callout.primary{
             background: transparent;
@@ -16,10 +20,12 @@
         .shittyidea {
             color: #fafafa;
             font-family: chewy, Arial, Helvetica, sans-serif;
+            line-height: 1.5em;
         }
         .loud.headline {
             color: #000;
             font-family: mansalva, Arial, Helvetica, sans-serif;
+            line-height: 1.5em;
         }
         @font-face {
             font-family: chewy;
@@ -48,6 +54,11 @@
             color: #fff;
             text-decoration: none;
           }
+          .btn-grad:focus{
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
          .btn-no {color: #fff; background-image: linear-gradient(to right, #FF512F 0%, #DD2476  51%, #FF512F  100%)}
          .btn-no {
             margin: 10px;
@@ -67,14 +78,18 @@
             color: #fff;
             text-decoration: none;
           }
+          .btn-no:focus{
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
         .sketchy {
-            padding: 4rem 8rem;
+            padding: 1rem 2rem;
             display: inline-block;
             border: 3px solid #333333;
             font-size: 2.5rem;
             border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
-            text-transform: uppercase;
-            letter-spacing: 0.3ch;
+            letter-spacing: 0.1ch;
             position: relative;
             
             &::before {
@@ -90,13 +105,11 @@
                 border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
             }
         }
-        .top {
-          padding-top: 5em;
-        } 
     </style>
   </head>
   <body>
 
+    <div class="row fire text-center"></div>
     <div class="row medium-8 large-7 columns text-center top">
       <div class="blog-post">
           <h2 class="loud headline">Was mach ich heute?</h2>
@@ -104,7 +117,6 @@
             <h2 class="loud headline">Scheiß egal, aber wie w&auml;r's mit ...</h2>
             <h1 class="loud shittyidea"></h1>
           </div>
-          <div class="row fire text-center"></div>
       </div>
     </div>
 
