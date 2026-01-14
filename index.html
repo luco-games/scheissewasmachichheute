@@ -1,0 +1,67 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation | Welcome</title>
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+    <style>
+        body {
+            background: #E494FF;
+            background: linear-gradient(90deg, rgba(228, 148, 255, 1) 0%, rgba(134, 142, 252, 1) 35%, rgba(130, 255, 155, 1) 100%);
+        }
+        .callout.primary{
+            background: transparent;
+        }
+        .shittyidea {
+            color: #fafafa;
+            font-family: chewy, Arial, Helvetica, sans-serif;
+        }
+        .loud.headline {
+            color: #fafafa;
+            font-family: mansalva, Arial, Helvetica, sans-serif;
+        }
+        @font-face {
+            font-family: chewy;
+            src: url("fonts/Chewy/Chewy-Regular.ttf");
+        }
+        @font-face {
+            font-family: mansalva;
+            src: url("fonts/Mansalva/Mansalva-Regular.ttf");
+        }
+    </style>
+  </head>
+  <body>
+
+    <div class="callout large primary">
+      <div class="row column text-center">
+        <h2 class="loud headline">Was mach ich heute?</h2>
+        <hr>
+        <h2 class="loud headline">Scheiß egal, aber hier ein Tipp:</h2>
+        <h1 class="loud shittyidea"></h1>
+      </div>
+      <div class="row fire text-center">
+      </div>
+    </div>
+
+    <!-- We can now combine rows and columns when there's only one column in that row -->
+    <div class="row medium-8 large-7 columns text-center">
+      <div class="blog-post">
+          <a class="button primary takeit" href="#">Okay</a>
+          <a class="button alert notthat" href="#">Nein, danke</a>
+      </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+
+
+
