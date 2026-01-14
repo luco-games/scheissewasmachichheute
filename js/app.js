@@ -28,7 +28,7 @@ async function getRandomLine(url) {
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
-  const url = "https://raw.githubusercontent.com/MicrosoftTranslator/CustomTranslatorSampleDatasets/refs/heads/main/Customer-sample-English-German-SentenceDictionary-en.txt";
+  const url = "data/ideas.txt";
   const container = document.querySelector('.fire')
     const fireworks = new Fireworks.default(container, {
   autoresize: false,
